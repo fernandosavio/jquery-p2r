@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery-p2r by luis-kaufmann-silva</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery-p2r</h1>
+        <p>jQuery plugin for pull to refresh (p2r)</p>
+
+        <p class="view"><a href="https://github.com/luis-kaufmann-silva/jquery-p2r">View the Project on GitHub <small>luis-kaufmann-silva/jquery-p2r</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/luis-kaufmann-silva/jquery-p2r/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/luis-kaufmann-silva/jquery-p2r/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/luis-kaufmann-silva/jquery-p2r">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="jquery---pull-to-refresh" class="anchor" href="#jquery---pull-to-refresh"><span class="octicon octicon-link"></span></a>jQuery - Pull to Refresh</h1>
+
+<p>A simple jQuery plugin to perform pull to refresh (p2r). Example of use:</p>
+
+<div class="highlight highlight-js"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".refresh-container"</span><span class="p">).</span><span class="nx">pullToRefresh</span><span class="p">({</span>
+        <span class="nx">onMove</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onMove</span><span class="p">(</span><span class="nx">percent</span><span class="p">){</span>
+            <span class="c1">// move to down</span>
+        <span class="p">},</span>
+        <span class="nx">onStart</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onStart</span><span class="p">(</span><span class="nx">y</span><span class="p">){</span>
+            <span class="c1">// start callback</span>
+        <span class="p">},</span>
+        <span class="nx">onEnd</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onEnd</span><span class="p">(</span><span class="nx">delta</span><span class="p">){</span>
+            <span class="c1">// on end callback (after onRefresh)</span>
+        <span class="p">},</span>
+        <span class="nx">onRefresh</span> <span class="o">:</span> <span class="kd">function</span> <span class="nx">onRefresh</span><span class="p">(</span><span class="nx">delta</span><span class="p">){</span>
+            <span class="c1">// on delta =&gt; refreshOn</span>
+        <span class="p">},</span>
+
+        <span class="nx">refreshOn</span><span class="o">:</span> <span class="mi">120</span><span class="p">,</span><span class="c1">// (int) px to refresh</span>
+        <span class="nx">velocity</span><span class="o">:</span> <span class="s2">"1000ms"</span><span class="p">,</span> <span class="c1">// (string) transition velocity</span>
+    <span class="p">});</span>
+</pre></div>
+
+<p>See <a href="http://luis.com">this demo</a> (needs touch support)</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/luis-kaufmann-silva">luis-kaufmann-silva</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
