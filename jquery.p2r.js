@@ -29,7 +29,7 @@
 
     PullToRefresh.DEFAULTS = {
         sensibility: 10, // number of pixels to each call of "move" event
-        refresh: 100, // value in pixels to fire "refresh" event
+        refresh: 200, // value in pixels to fire "refresh" event
         lockRefresh: false, // indicates that the user can pull up to get the value "refresh"
         resetRefresh: false, // indicates that the "reset" function will be called immediately when occur the event "refresh"
         autoInit: true, // indicates that the "PullToRefresh" object must be built on startup "plugin"
